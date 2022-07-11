@@ -1,9 +1,9 @@
 import "./App.css";
-import ButtonAtom from "./atoms/Button";
+import Loader from "./atoms/loader/index";
 function App() {
   return (
     <div className="App">
-      <ButtonAtom />
+      <Loader />
     </div>
   );
 }

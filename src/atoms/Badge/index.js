@@ -1,6 +1,18 @@
 import React from "react";
 import { Badge } from "@mui/material";
-function Badge() {
+import PropTypes from "prop-types";
+function Badges(props) {
+  const {
+    color,
+    overlap,
+    imgClass,
+    className,
+    variant,
+    src,
+    alt,
+    BadgeContent,
+    text,
+  } = props;
   return (
     <div>
       <Badge
@@ -10,7 +22,7 @@ function Badge() {
         variant={variant}
         className={className}
       >
-        <img src={src} className={classNaem} alt={alt}>
+        <img src={src} className={imgClass} alt={alt}>
           {text}{" "}
         </img>
       </Badge>
@@ -18,7 +30,7 @@ function Badge() {
   );
 }
 
-Badge.prototype = {
+Badges.defaultProps = {
   color: "Primary",
   overlap: "",
   BadgeContent: "",
@@ -27,4 +39,4 @@ Badge.prototype = {
   imgClass: "w-16 h-16",
 };
 
-export default Badge;
+export default Badges;
