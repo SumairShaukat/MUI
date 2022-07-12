@@ -1,10 +1,9 @@
 import "./App.css";
-import LabelAtom from "./atoms/label";
-import PopoverAtom from "./atoms/popover";
+import RadioButton from "./atoms/radioButton/index";
 function App() {
   return (
     <div className="App">
-      <PopoverAtom />
+      <RadioButton />
     </div>
   );
 }
