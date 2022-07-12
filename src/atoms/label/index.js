@@ -1,8 +1,10 @@
 import React from "react";
-import Proptype from "prop-type";
-function LabelAtom() {
+import Proptype from "prop-types";
+import { Typography } from "@mui/material";
+function LabelAtom(props) {
+  const { value } = props;
   return (
-    <Typography {...props}>
+    <Typography>
       {props.styleName || ""}
       {value}
     </Typography>

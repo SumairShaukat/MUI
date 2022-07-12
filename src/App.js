@@ -1,9 +1,10 @@
 import "./App.css";
-import Loader from "./atoms/loader/index";
+import LabelAtom from "./atoms/label";
+import PopoverAtom from "./atoms/popover";
 function App() {
   return (
     <div className="App">
-      <Loader />
+      <PopoverAtom />
     </div>
   );
 }

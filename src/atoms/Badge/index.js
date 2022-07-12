@@ -1,6 +1,5 @@
 import React from "react";
 import { Badge } from "@mui/material";
-import PropTypes from "prop-types";
 function Badges(props) {
   const {
     color,
