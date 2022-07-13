@@ -5,10 +5,16 @@ function Dropdown(props) {
   const { options, itemsClasses, icons, className } = props;
   const [anchorEl, setAnchoneEl] = useState(null);
   const open = Boolean(anchorEl);
+
   const handleClose = (e) => {
     console.log(e);
   };
-
+  const handleClick = (e) => {
+    setAnchoneEl(null);
+    if (fun) {
+      fun();
+    }
+  };
   return (
     <div>
       <IconButton aria-label="more" aria-controls="long-enu">
@@ -19,7 +25,7 @@ function Dropdown(props) {
         anchorEl={anchorEl}
         keepMounted={false}
         open={open}
-        onClose={() => handleClose(() => {})}
+        onClose={() => handleClick(() => {})}
         TransitionComponent={Fade}
       >
         {options?.map((k, v) => {
