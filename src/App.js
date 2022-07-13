@@ -1,9 +1,9 @@
 import "./App.css";
-import RadioButton from "./atoms/radioButton/index";
+import Dropdown from "./atoms/dropdown";
 function App() {
   return (
     <div className="App">
-      <RadioButton />
+      <Dropdown />
     </div>
   );
 }
