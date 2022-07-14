@@ -9,10 +9,10 @@ function Dropdown(props) {
   const handleClose = (e) => {
     console.log(e);
   };
-  const handleClick = (e) => {
+  const handleClick = (func) => {
     setAnchoneEl(null);
-    if (fun) {
-      fun();
+    if (func) {
+      func();
     }
   };
   return (

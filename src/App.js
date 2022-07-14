@@ -1,11 +1,7 @@
 import "./App.css";
-import Dropdown from "./atoms/dropdown";
+import Tab from "@mui/material/Tab";
 function App() {
-  return (
-    <div className="App">
-      <Dropdown />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
