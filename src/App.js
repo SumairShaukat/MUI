@@ -1,7 +1,13 @@
 import "./App.css";
-import Tab from "@mui/material/Tab";
+import Buttonatom from "../src/atoms/Button/index";
+import SwitchAtom from "./atoms/switch/index";
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Buttonatom />
+      <SwitchAtom />
+    </div>
+  );
 }
 
 export default App;
